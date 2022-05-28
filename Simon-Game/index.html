@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simon</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="inst-container">
+      <h3 class="title">How To Play ?</h3>
+      <ul class="instructions">
+        <li>Press a key to start the game.</li>
+        <li>
+          Simon will give the first signal by animating a color and making its
+          corresponding sound. This is level 1.
+        </li>
+        <li>Repeat the signal by pressing the same color button.</li>
+        <li>
+          Simon will duplicate the first signal and add one. Repeat these two
+          signals by pressing the same color buttons, in order.
+        </li>
+        <li>
+          This will be the level 2 and the level will keep on increasing with
+          the increase in sequence
+        </li>
+        <li>Simon will duplicate these first two signals and add one.</li>
+        <li>
+          Continue playing as long as you can repeat each sequence of signals
+          correctly.
+        </li>
+        <li>
+          If you fail to repeat a sequence exactly, Simon responds with a "RAZZ"
+          sound. This means you've lost, and the sequence of signals ends. Press a key again to restart the game.
+        </li>
+      </ul>
+      <p class="instructions">Scroll down to play...</p>
+    </div>
+    <h1 class="title" id="level-title">Press A Key to Start</h1>
+    <div class="container">
+      <div class="row">
+        <div type="button" id="green" class="btn green"></div>
+
+        <div type="button" id="red" class="btn red"></div>
+      </div>
+
+      <div class="row">
+        <div type="button" id="yellow" class="btn yellow"></div>
+        <div type="button" id="blue" class="btn blue"></div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
