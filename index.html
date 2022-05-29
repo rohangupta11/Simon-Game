@@ -18,9 +18,9 @@
 
   <body>
     <div class="inst-container">
-      <h3 class="title">How To Play ?</h3>
+      <h3 class="title" id="instruction-title">How To Play ?</h3>
       <ul class="instructions">
-        <li>Press a key to start the game.</li>
+        <li>Press start button to start the game.</li>
         <li>
           Simon will give the first signal by animating a color and making its
           corresponding sound. This is level 1.
@@ -46,7 +46,7 @@
       </ul>
       <p class="instructions">Scroll down to play...</p>
     </div>
-    <h1 class="title" id="level-title">Press A Key to Start</h1>
+    <h1 class="title" id="level-title">Press Start Button To Start The Game</h1>
     <div class="container">
       <div class="row">
         <div type="button" id="green" class="btn green"></div>
@@ -59,6 +59,7 @@
         <div type="button" id="blue" class="btn blue"></div>
       </div>
     </div>
+    <button class="start-button">Start</button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="game.js"></script>
   </body>
