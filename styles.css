@@ -6,15 +6,16 @@ body {
 
 .title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
+  font-size: 2rem;
   margin:  5%;
+  margin-bottom: 2%;
   color: #FEF2BF;
 }
 
 .instructions{
   text-align: justify;
   font-family: 'Fredoka One', cursive;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin:  2.5%;
   color: #DAE5D0;
 }
@@ -64,3 +65,26 @@ li{
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+.start-button{
+  margin-top: 12px;
+  margin-bottom:12px;
+  padding: 8px;
+  border-radius: 15px;
+  width: 300px;
+  font-size: 25px;
+  background-color: beige;
+}
+.start-button:hover{
+  background-color: rgb(129, 129, 76);
+}
+.start-button-remove{
+  visibility:hidden;
+  margin-top: 12px;
+  margin-bottom:12px;
+  padding: 8px;
+  font-size: 25px;
+}
+#instruction-title{
+  font-size: 3rem;
+}
+
