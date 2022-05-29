@@ -3,9 +3,11 @@ var userClickedPattern=[];
 var gamePattern=[];
 var level=0;
 var started=false;
-$(document).keypress(function(){
+$(".start-button").on("click",function(){
     if(!started)
     {
+        $(".start-button").addClass("start-button-remove");
+        $(".start-button-remove").removeClass("start-button");
         $("#level-title").html("Level " + level);
         nextSequence();
         started=true;
@@ -65,7 +67,11 @@ function checkAnswer(currentLastIndex)
             $("body").removeClass("game-over");
 
         },200)
-        $("#level-title").text("Game Over, Press Any Key to Restart");
+        $("#level-title").text("Game Over, Press Start Button To Restart!");
+        $(".start-button-remove").html("Start Again!")
+        $(".start-button-remove").addClass("start-button");
+        $(".start-button").removeClass("start-button-remove");
+
         startOver();
     }
 }
